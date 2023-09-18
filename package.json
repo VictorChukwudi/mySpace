@@ -1,0 +1,26 @@
+{
+  "name": "myspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/jwt": "^7.2.1",
+    "@fastify/swagger": "^8.10.0",
+    "@fastify/swagger-ui": "^1.9.3",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.22.2",
+    "mysql2": "^3.6.1",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "sequelize-cli": "^6.6.1"
+  }
+}
