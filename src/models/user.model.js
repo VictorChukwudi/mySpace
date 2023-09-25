@@ -1,5 +1,5 @@
 const { DataTypes } = require("sequelize");
-module.exports = sequelize.define({
+module.exports = sequelize.define("User", {
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
