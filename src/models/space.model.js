@@ -2,15 +2,20 @@ const {DataTypes}=require("sequelize")
 module.exports=sequelize.define("Space",{
     creator_id:{
         type: DataTypes.INTEGER,
-        allowNull: false,
+        // allowNull: false,
     },
     space_id:{
-        type:DataTypes.UUIDV4,
+        type:DataTypes.UUID,
+        primaryKey: true,
         unique:true
     },
     spaceName:{
         type: DataTypes.STRING,
-        allowNull: false,
+        // allowNull: false,
         unique:true
+    },
+    url:{
+        type:DataTypes.STRING,
+        // allowNull:false
     }
 })
