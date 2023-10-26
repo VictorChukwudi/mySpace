@@ -11,6 +11,7 @@ fastify.decorate("asyncVerifyJWT",verifyJWT)
 
 fastify.register(require("./src/routes/user.routes"), { prefix: "/api/user" });
 fastify.register(require("./src/routes/space.routes"),{prefix:"/api/space"})
+fastify.register(require("./src/routes/post.routes"),{prefix:"/api/post"})
 
 const start = async () => {
   try {
